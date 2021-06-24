@@ -1,6 +1,16 @@
 h1, h2 {
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    }
+    font-family: 'Big Shoulders Stencil Display' , cursive;
+    
+}
+
+#mainheader {
+    font-size: 70px;
+}
+
+.site-footer {
+    margin-top: 300px;
+}
+    
 
 h1 {
     font-size: 70px;
