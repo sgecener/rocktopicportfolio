@@ -10,32 +10,45 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet"> 
+
 
     <title>Rock Topic Climbing Gym</title>
 </head>
 <body>
 
     <!--I have a logo made that i will add i just dont know if this should be just one pic that goes away as you scroll up or a carousel-->
-    <header class="jumbotron">
-        <h1>Rock Topic Climbing</h1>
-        <h2>Driving You Up A Wall</h2>
-    </header>
 
-<nav class="nav justify-content-end sticky-top bg-light">
-    <ul class="list-unstyled list-inline">
-        <li class="list-inline-item"><a class="nav-link" href="#"> Membership + Pricing</a></li>
-        <li class="list-inline-item"><a class="nav-link" href="#">Yoga + Fittness</a></li>
-        <li class="list-inline-item"><a class="nav-link" href="#">Events</a></li>
-        <li class="list-inline-item"><a class="nav-link" href="#">Shop</a></li>
-        <li class="list-inline-item"><a class="nav-link" href="#">About</a></li>
-    </ul>
-</nav>
+    <nav class="nav justify-content-end sticky-top bg-light">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a class="nav-link" href="#"> Membership + Pricing</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">Yoga + Fitness</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row content">
+                <div class="col-6">
+                    <img src="img/canyonslogo.png">
+                        <h1 id="mainheader">Rock Topic Climbing</h1>
+                        <div class="col">
+                            <h2>Driving You Up A Wall</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <!--my general idea here is to creat solid blocks similar to those on G1's homepage-->
 <div class="container-fluid">
     <div class="row row-content">
         <div class="col">
-            <h3>Membership Benifits</h3>
+            <h3>Membership Benefits</h3>
             <p>All day, every day accesss to climbing, all Yoga and Core classes included. Accesss to all Gym Events and much more.</p>
         </div>
         <div class="col">
@@ -54,22 +67,23 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
 <footer class="site-footer">
-    <div class="container">
+    <div class="container container-fluid">
         <div class="row">
-            <div class="col">
+            <div class="col-4 text-center">
                 <h5>Social</h5>
                 <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                 <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                 <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                 <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-4 text-center">
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                    +1 231-411-1459</a><br />
+                <a role="button" class="btn btn-link" href="mailto:info@rocktopic.com"><i
+                        class="fa fa-envelope-o"></i> info@rocktopic.com</a>
+            </div>
+
             </div>
         </div>
     </div>
