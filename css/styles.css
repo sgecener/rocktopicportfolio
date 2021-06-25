@@ -15,3 +15,16 @@ h1, h2 {
 h1 {
     font-size: 70px;
 }
+
+#jumbotronLogo {
+    border-radius: 50%;
+}
+
+#navbarLogo {
+    border-radius: 50px;
+}
+
+#navbarLogo:hover {
+    opacity: 0.5;
+}
+
