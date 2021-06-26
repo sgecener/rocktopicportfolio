@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--let me know what you think of this 'Sign up for newsletter' form, similar to the on we did for class -->
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md sticky-top bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/rockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-align-right"></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbar">
+            <ul class="nav-navbar list-unstyled list-inline">
+                <li class="list-inline-item"><a class="nav-link text-light" href="membership.html"> Membership + Pricing</a></li>
+                <li class="list-inline-item"><a class="nav-link text-light" href="fitness.html">Yoga + Fitness</a></li>
+                <li class="list-inline-item"><a class="nav-link text-light" href="events.html">Events</a></li>
+                <li class="list-inline-item"><a class="nav-link text-light" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="row row-content">
+        <div class="col-12">
+            <h2>Sign Up For Our Newsletter</h2>
+            <hr />
+        </div>
+        <div class="col-md-10">
+            <form>
+                <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10"> 
+                        <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastName" name="lastName"
+                            placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="text" class="form-control" id="areaCode" name="areaCode"
+                            placeholder="Area code" />
+                    </div>
+                    <div class="col-7">
+                        <input type="text" class="form-control" name="telNum" placeholder="Tel. number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col offset-md-2">
+                        May we contact you with promotional offers?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
+                                value="yes" />
+                            <label for="contactYes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
+                                value="no" />
+                            <label for="contactNo" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+    
+</body>
+</html>
