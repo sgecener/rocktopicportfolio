@@ -30,71 +30,102 @@
                 <li class="list-inline-item"><a class="nav-link text-light" href="membership.html"> Membership + Pricing</a></li>
                 <li class="list-inline-item active"><a class="nav-link text-light" href="#">Yoga + Fittness</a></li>
                 <li class="list-inline-item"><a class="nav-link text-light" href="#">Events</a></li>
-                <li class="list-inline-item"><a class="nav-link text-light" href="#">About</a></li>
+                <li class="list-inline-item"><a class="nav-link text-light" href="contactus.html">About</a></li>
             </ul>
         </div>
     </nav>
 
-<!--i was wanting your opinion on if we should also make these into cards or something else-->
-<h3>Yoga Classes</h3>
-<p>We offer 3 Types of yoga each with their own specialized instructor</p>
-<ul>
-    <li>Hisoka Morrow instructs Vinyasa intermediate levels Monday-Friday @ 6p and Saturdays @ 11a</li>
-    <li>Biscuit Krueger instructs Kundalini for all levels Monday-Friday @ 7:15p and Saturdays @ 12:15p</li>
-    <li>Palm Siberia instructs Yin for all levels Monday-Friday @ 8:30p(class not offered on Saturdays</li>
-</ul>
-<button class="btn btn-outline-dark btn-lg btn-block col-6 align-item-center">Book</button>
-
-
-
-<h3>Core Classes</h3>
-<p>We offer 2 core classes a day on Monday, Wednesday and Friday. Only one class is offered on Sunday at this time</p>
-<ul>
-    <li>Asta Staria instructs the Beginner courses @ noon on Monday, Wednesday, Friday and Saturday</li>
-    <li>Son Goku instructs the intermediate courses @ 1p on Monday, Wednesday and Friday</li>
-</ul>
-<button class="btn btn-outline-dark btn-lg btn-block">Book</button>
-
-
-
-
-<h3>Climbing 101</h3>
-<p>Climimbing 101 is a course where you are introdced to the basics of safety and technique for climbing and is offered on Wednesdays and Saturdays @3p. This course is instructed by one of our certified lead climbers, but the individual changes weekly as to give all team members exposure.</p>
-<ul>
-    <li>Michael Phellps</li>
-    <li>Tony Tiger</li>
-    <li>Flash Slothmore</li>
-    <li>Sero Hanata</li>
-    <li>Peter Parker</li>
-    <li>Beeeeeez</li>
-</ul>
-<button class="btn btn-outline-dark btn-lg btn-block">Book</button>
-
-<!--my intention is to have all three buttons use the same modal and have a form-->
-
-
-
-    <footer class="site-footer">
-        <div class="container container-fluid">
-            <div class="row row-content">
-                <div class="col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <h5>Contact Us</h5>
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-                    <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o"></i>RockTopicClimb@gmail.com</a>
-                </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header bg-dark" id="yogaHeader">
+                            <h3 class="mb-0 text-left">
+                                <button class=" btn btn-link text-white" data-toggle="collapse" data-target="#yogaInfo" aria-expanded="true" aria-controls="yogaInfo">
+                                    Yoga Classes
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="yogaInfo" class="collapse show" aria-labelledby="yogaHeader" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>We offer 3 Types of yoga each with their own specialized instructor</p>
+                                <ul>
+                                    <li>Hisoka Morrow instructs Vinyasa intermediate levels Monday-Friday @ 6p and Saturdays @ 11a</li>
+                                    <li>Biscuit Krueger instructs Kundalini for all levels Monday-Friday @ 7:15p and Saturdays @ 12:15p</li>
+                                    <li>Palm Siberia instructs Yin for all levels Monday-Friday @ 8:30p(class not offered on Saturdays</li>
+                                </ul>
+                                <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                                <div class="card-header bg-dark" id="coreHeader">
+                                    <h3 class="mb-0 text-center">
+                                        <button class=" btn btn-link text-white" data-toggle="collapse" data-target="#coreInfo" aria-expanded="false" aria-controls="coreInfo">
+                                            Core Classes
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div id="coreInfo" class="collapse" aria-labelledby="coreHeader" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>We offer 2 core classes a day on Monday, Wednesday and Friday. Only one class is offered on Sunday at this time</p>
+                                        <ul>
+                                            <li>Asta Staria instructs the Beginner courses @ noon on Monday, Wednesday, Friday and Saturday</li>
+                                            <li>Son Goku instructs the intermediate courses @ 1p on Monday, Wednesday and Friday</li>
+                                        </ul>
+                                        <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-dark" id="climbingHeader">
+                                        <h3 class="mb-0 text-right">
+                                            <button class=" btn btn-link text-white" data-toggle="collapse" data-target="#climbingInfo" aria-expanded="false" aria-controls="climbingInfo">
+                                                Climbing 101
+                                            </button>
+                                        </h3>
+                                    </div>
+                                    <div id="climbingInfo" class="collapse" aria-labelledby="climbingHeader" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>Climimbing 101 is a course where you are introdced to the basics of safety and technique for climbing and is offered on Wednesdays and Saturdays @3p. This course is instructed by one of our certified lead climbers, but the individual changes weekly as to give all team members exposure.</p>
+                                            <ul>
+                                                <li>Michael Phellps</li>
+                                                <li>Tony Tiger</li>
+                                                <li>Flash Slothmore</li>
+                                                <li>Sero Hanata</li>
+                                                <li>Peter Parker</li>
+                                                <li>Beeeeeez</li>
+                                            </ul>
+                                            <p class="bg-warning">*Note* Climbing 101 is not included in Day Pass admission</p>
+                                            <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
+                                        </div>
+                                    </div>
             </div>
         </div>
-    
-    
-    </footer>
+    </div>
+<!--my intention is to have all three buttons use the same modal and have a form--> 
 
+
+
+<footer class="site-footer">
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h5>Contact Us</h5>
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>info@rocktopic.com</a>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
