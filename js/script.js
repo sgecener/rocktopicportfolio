@@ -17,5 +17,5 @@ $(function () {
     })});
 
     $("#modalButton").click(function () {
-        $("#reserveModal").modal("show")
+        $("#newsletterModal").modal("show")
     });
