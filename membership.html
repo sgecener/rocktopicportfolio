@@ -20,7 +20,7 @@
     <body>
 
             <nav class="navbar navbar-expand-md sticky-top bg-dark">
-                <a class="navbar-brand" href="index.html"><img src="img/rockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
+                <a class="navbar-brand" href="index.html"><img src="img/NewRockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa fa-align-right"></i></span>
                 </button>
@@ -53,6 +53,9 @@
             <div class="row row-content">
                 <div class="card-wrapper col-sm-6">
                     <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/thumbForMemberships.jpg" alt=""/>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">Day Pass</h3>
                             <div class="card-content">
@@ -70,6 +73,9 @@
                 </div>
                 <div class="card-wrapper col-sm-6">
                     <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/thumbForMemberships.jpg" alt=""/>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">1 Month Membership</h3>
                             <div class="card-content">
@@ -91,6 +97,9 @@
             <div class="row">
                 <div class="card-wrapper col-sm-6">
                     <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/thumbForMemberships.jpg" alt=""/>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">6 Month Membership</h3>
                             <div class="card-content">
@@ -111,6 +120,9 @@
 
                 <div class="card-wrapper col-sm-6">
                     <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/thumbForMemberships.jpg" alt=""/>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">12 Month Membership</h3>
                                 <div class="card-content">
@@ -129,10 +141,11 @@
                     </div>
                 </div>
                 <br/>
-                <!--having trouble getting this last card to center-->
-                <!--there was and extra row here, that's why it wasnt centered-->
                 <div class="card-wrapper col">
                     <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/jumbotron_BoulderingWall.jpg" alt=""/>
+                        </div>
                         <div class="card-body">
                             <h3 class="card-title">Reccurring Membership</h3>
                                 <div class="card-content">
@@ -155,24 +168,86 @@
 
 
         <footer class="site-footer">
-            <div class="container container-fluid">
+            <div class="container container-fluid mb-1">
                 <div class="row">
-                    <div class="col-6 text-center">
-                        <h5>Social</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
+                        data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
+                    <div class="modal fade" tabindex="-1" role="dialog" id="newsletterModal">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Sign Up For Our Newsletter</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <br />
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="firstName" class="col-2 col-form-label">First Name</label>
+                                            <div class="col-10 mt-3">
+                                                <input type="text" class="form-control" id="firstName" name="firstName"
+                                                    placeholder="First Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lastName" class="col-2 col-form-label">Last Name</label>
+                                            <div class="col-10">
+                                                <input type="text" class="form-control" id="lastName" name="lastName"
+                                                    placeholder="Last Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-2 col-form-label">Email</label>
+                                            <div class="col-10">
+                                                <input type="text" class="col form-control" id="email" name="email"
+                                                    placeholder="Email" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-9 ml-5">
+                                                May we contact you with promotional offers?
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="contactYes"
+                                                        name="contactRadios" value="yes" />
+                                                    <label for="contactYes" class="form-check-label">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" id="contactNo"
+                                                        name="contactRadios" value="no" />
+                                                    <label for="contactNo" class="form-check-label">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-4 text-center">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col text-center">
                         <h5>Contact Us</h5>
-                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-                        <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>  info@rocktopic.com</a>
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                            1-206-555-1234</a><br>
+                        <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>
+                            info@rocktopic.com</a>
                     </div>
                 </div>
             </div>
-
-
         </footer>
 
             <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
