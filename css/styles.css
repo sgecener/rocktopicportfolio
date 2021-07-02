@@ -24,9 +24,12 @@ a, a:hover {
 
 .site-footer {
     margin: 0px;
-    padding: 10px 0px;
+    padding: 20px 0px;
     width: 100%;
     background-image: linear-gradient(to left bottom, bisque, gray 50%, bisque);
+    text-align: center;
+    margin-top: 400px;
+    background-color:bisque;
 }
 
 .jumbotron {
@@ -49,12 +52,37 @@ a, a:hover {
     color: rgba(0,0,0,1) ;
 }
 
+.carousel-caption {
+    background-color: rgba(209, 179, 115, 0.849); }
+  
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+ }
+
+.modal-header {
+    background-color: rgb(226, 190, 145);
+
+}
+
+
+
+#modalButton {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
 #mainHeader {
-    font-size: 50px;
+    font-size: 65px;
 }
 
 #motto {
-    font-size: 30px;
+    font-size: 35px;
+    padding-left: 5px;
+    padding-top: 50px;
 }
 
 #jumbotronLogo {
