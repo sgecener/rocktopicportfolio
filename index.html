@@ -17,11 +17,11 @@
 
     <title>Rock Topic Climbing Gym</title>
 </head>
-<body>
+<body id="homeBody">
 
 
     <nav class="navbar navbar-expand-md sticky-top bg-dark">
-        <a class="navbar-brand" href="#"><img src="img/rockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
+        <a class="navbar-brand" href="#"><img src="img/NewRockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" >
             <span class="navbar-toggler-icon"><i class="fa fa-align-right"></i></span>
           </button>
@@ -38,123 +38,160 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-
             <div class="row row-content">
-                <div class="col-4 mt-0">
+                <div class="col-sm">
+                    <img src="img/NewRockTopicLogo.png" id="jumbotronLogo" class="image-fluid ml-4 "  height="250"/>
+                </div>
+                <div class="col-sm-5">
                     <h1 id="mainHeader">Rock Topic Climbing</h1>
                 </div>
-                <div class="row row-content">
-                    <div class="col"></div>
-                        <img src="img/rockTopicLogo.png" id="jumbotronLogo" class="image-fluid ml-4 "  height="170"/>
-                    </div>
-                </div>
-                <div class="row row-content">
-                    <div class="col-lg-4 mb-0">
-                        <h2 id="motto">Driving You Up A Wall</h2>
-                    </div>
+                <div class="col-sm-1">
+                    <h2 id="motto">Driving You Up A Wall</h2>
                 </div>
                 
             </div>
-
         </div>
     </header>
 
 
+    <div class="modal fade" id="waiverModal" data-backdrop="static" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rock Topic Waiver Agreement</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis massa sit amet nunc ullamcorper ullamcorper. Donec ultricies interdum ipsum. Nam feugiat facilisis orci luctus commodo. Donec dui odio, aliquet id leo vitae, fermentum pretium ligula. Fusce quis viverra odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam imperdiet justo commodo leo pretium, eu ultrices quam congue. Pellentesque commodo tellus a nisl tempor, ut consequat risus vestibulum.
 
-<!--my general idea here is to creat solid blocks similar to those on G1's homepage-->
-    <div class="container container-fluid">
-        <div class="row row-content">
-            <div class="col">
-                <h3>Membership Benefits</h3>
-                <p>All day, every day accesss to climbing, all Yoga and Core classes included. Accesss to all Gym Events and much more.</p>
+                Vestibulum pharetra eleifend justo. Phasellus a interdum eros, nec vehicula quam. Sed erat mauris, sollicitudin eget auctor non, mattis nec ante. Fusce diam tortor, aliquet in odio rhoncus, scelerisque facilisis odio. In dolor ligula, bibendum sed turpis aliquet, maximus finibus mi. Mauris tempor malesuada diam, sit amet mollis arcu ultrices at. Sed in dignissim dui, id aliquet mauris. Donec eu consectetur mi. Suspendisse a fringilla erat. In convallis at mauris nec dapibus.
+                
+                Quisque rutrum tortor in lorem sagittis, a cursus justo pellentesque. Phasellus non justo at ipsum varius pretium nec sit amet odio. Duis vel neque elit. Phasellus justo enim, finibus sit amet diam vitae, molestie placerat dui. Aenean scelerisque, nunc et vehicula rhoncus, metus purus euismod tortor, in congue purus ex id velit. Nullam elementum libero quis eros sodales vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris quis imperdiet lacus, eget venenatis justo. Duis vitae mauris vel libero consectetur elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dolor finibus sem varius eleifend id eu quam. Nulla nec erat efficitur, semper tellus sit amet, bibendum mi. Fusce sapien ante, elementum pharetra facilisis at, sodales et eros. Aliquam sagittis viverra est, et scelerisque felis. Quisque bibendum molestie eros ac consequat. Mauris efficitur ipsum quis purus vestibulum mattis sed vel felis.
+            
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis massa sit amet nunc ullamcorper ullamcorper. Donec ultricies interdum ipsum. Nam feugiat facilisis orci luctus commodo. Donec dui odio, aliquet id leo vitae, fermentum pretium ligula. Fusce quis viverra odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam imperdiet justo commodo leo pretium, eu ultrices quam congue. Pellentesque commodo tellus a nisl tempor, ut consequat risus vestibulum.
+
+                Vestibulum pharetra eleifend justo. Phasellus a interdum eros, nec vehicula quam. Sed erat mauris, sollicitudin eget auctor non, mattis nec ante. Fusce diam tortor, aliquet in odio rhoncus, scelerisque facilisis odio. In dolor ligula, bibendum sed turpis aliquet, maximus finibus mi. Mauris tempor malesuada diam, sit amet mollis arcu ultrices at. Sed in dignissim dui, id aliquet mauris. Donec eu consectetur mi. Suspendisse a fringilla erat. In convallis at mauris nec dapibus.
+                
+                Quisque rutrum tortor in lorem sagittis, a cursus justo pellentesque. Phasellus non justo at ipsum varius pretium nec sit amet odio. Duis vel neque elit. Phasellus justo enim, finibus sit amet diam vitae, molestie placerat dui. Aenean scelerisque, nunc et vehicula rhoncus, metus purus euismod tortor, in congue purus ex id velit. Nullam elementum libero quis eros sodales vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris quis imperdiet lacus, eget venenatis justo. Duis vitae mauris vel libero consectetur elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at dolor finibus sem varius eleifend id eu quam. Nulla nec erat efficitur, semper tellus sit amet, bibendum mi. Fusce sapien ante, elementum pharetra facilisis at, sodales et eros. Aliquam sagittis viverra est, et scelerisque felis. Quisque bibendum molestie eros ac consequat. Mauris efficitur ipsum quis purus vestibulum mattis sed vel felis.</p>
+                <label for="waiverCheckbox">
+                    <input required type="checkbox" id="waiverCheckbox" value="agree"/> I have read and agree to the terms and condtions in this waiver
+                </label>
             </div>
-            <div class="col">
-                <h3>Gear Up</h3>
-                <p>From Harnesses to Chalk Bags we're a one stop shop for all your climbing needs... and a few snacks just in case.</p>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary">Agree</button>
             </div>
+          </div>
         </div>
-        <div class="row row-content">
-            <div class="col">
-                <h3>The Community</h3>
-                <p>See how we get involved in not just our climbing community but the one around us as well.</p>
-            </div>
-            <div class="col">
-                <h3>Team Rock Topic</h3>
-                <p>Check out our very own competition team. All ages and all levels are welcome to the Team tryouts held twice a year.</p>
-            </div>
+      </div>
+
+
+<div class="container-fluid">
+    <div class="row row-content">
+        <div class="col-sm p-5 m-5 text-center" id="waiverReminder">
+            <h3 class="align-text-center">First time visiting? All new guests need to fill out a waiver before being allowed to climb!</h3>
+            <button type="button" class="btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#waiverModal">Waiver</button>
         </div>
     </div>
+    <div class="row row-content">
+        <div class="col p-5 m-5" id="homeInfo">
+            <h3>Membership Benefits</h3>
+            <p>All day, every day accesss to climbing, all Yoga and Core classes included. Accesss to all Gym Events and much more.</p>
+        </div>
+        <div class="col p-5 m-5" id="homeInfo">
+            <h3>Gear Up</h3>
+            <p>From Harnesses to Chalk Bags we're a one stop shop for all your climbing needs... and a few snacks just in case.</p>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col p-5 m-5" id="homeInfo">
+            <h3>The Community</h3>
+            <p>See how we get involved in not just our climbing community but the one around us as well.</p>
+        </div>
+        <div class="col p-5 m-5" id="homeInfo">
+            <h3>Team Rock Topic</h3>
+            <p>Check out our very own competition team. All ages and all levels are welcome to the Team tryouts held twice a year.</p>
+        </div>
+    </div>
+</div>
 
 <footer class="site-footer">
     <div class="container container-fluid mb-1">
         <div class="row">
-            <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal" data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
+            <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
+                data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
             <div class="modal fade" tabindex="-1" role="dialog" id="newsletterModal">
                 <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Sign Up For Our Newsletter</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                        <form>
-                            <div class="form-group row">
-                                <label for="firstName" class="col-2 col-form-label">First Name</label>
-                                <div class="col-10 mt-3"> 
-                                    <input type="text" class="form-control" id="firstName" name="firstName"
-                                        placeholder="First Name" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="lastName" class="col-2 col-form-label">Last Name</label>
-                                <div class="col-10">
-                                    <input type="text" class="form-control" id="lastName" name="lastName"
-                                        placeholder="Last Name" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="email" class="col-2 col-form-label">Email</label>
-                                <div class="col-10">
-                                    <input type="text" class="col form-control" id="email" name="email" placeholder="Email" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-9 ml-5">
-                                    May we contact you with promotional offers?
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
-                                            value="yes" />
-                                        <label for="contactYes" class="form-check-label">Yes</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
-                                            value="no" />
-                                        <label for="contactNo" class="form-check-label">No</label>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Sign Up For Our Newsletter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <br />
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-2 col-form-label">First Name</label>
+                                    <div class="col-10 mt-3">
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="First Name" />
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-2 col-form-label">Last Name</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                            placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-2 col-form-label">Email</label>
+                                    <div class="col-10">
+                                        <input type="text" class="col form-control" id="email" name="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-9 ml-5">
+                                        May we contact you with promotional offers?
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactYes"
+                                                name="contactRadios" value="yes" />
+                                            <label for="contactYes" class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactNo"
+                                                name="contactRadios" value="no" />
+                                            <label for="contactNo" class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Sign up</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Sign up</button>
-                    </div>
-                  </div>
                 </div>
             </div>
-            <div class="col-5 text-center">
+            <div class="col-4 text-center">
                 <h5>Social</h5>
-                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a>
             </div>
             <div class="col text-center">
                 <h5>Contact Us</h5>
-                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-                <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>  info@rocktopic.com</a>
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                    1-206-555-1234</a><br>
+                <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>
+                    info@rocktopic.com</a>
             </div>
         </div>
     </div>

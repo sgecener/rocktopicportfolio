@@ -23,10 +23,8 @@
 <body>
 
     <nav class="navbar navbar-expand-md sticky-top bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="img/rockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo"
-                class="image-fluid" height="40" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="img/NewRockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-align-right"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
@@ -39,6 +37,59 @@
         </div>
     </nav>
 
+    <div class="modal" id="classSignup" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Please select a class, date and time.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="guestName">What's your Name?</label>
+                      <input type="text" id="guestName" placeholder="Name"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="classDay">Select a day</label>
+                    <input type="date" id="classDay" value="classDay"/>
+                </div>
+                <div class="form-group">
+                    <label for="classType">Select a Class</label>
+                    <select class="form-control" id="classType">
+                      <option value="0">Select</option>
+                      <option value="abs">Core Class</option>
+                      <option value="climb">Climbing 101</option>
+                      <option value="Vinyasa"> Vinyasa</option>
+                      <option value="Kundalini">Kundalini</option>
+                      <option value="Yin">Yin</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="classTime">Please select a time</label>
+                      <select multiple class="form-control" id="classType">
+                        <option value="0">Select</option>
+                        <option value="11">11:00a</option>
+                        <option value="12">12:00p</option>
+                        <option value="1215">12:15p</option>
+                        <option value="1300">1:00p</option>
+                        <option value="1500">3:00p</option>
+                        <option value="1800">6:00p</option>
+                        <option value="1915">7:15p</option>
+                        <option value="2030">8:30p</option>
+                      </select>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" value="submit" class="btn btn-dark">Put me on the list</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -50,85 +101,65 @@
                 <hr />
             </div>
         </div>
-
-        <!--cant figure out how to make accordion headers bigger-->
         <div class="row row-content">
             <div class="col-sm">
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header bg-dark" id="yogaHeader">
-                            <h3 class="mb-0 text-left">
-                                <button class=" btn btn-link text-white" data-toggle="collapse" data-target="#yogaInfo"
-                                    aria-expanded="true" aria-controls="yogaInfo">
-                                    Yoga Classes
-                                </button>
-                            </h3>
+                <div id="fitnessCards">
+                    <div class="card" style="width: 100%">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/yoga.jpg" alt="An image of one of the Yoga classes offered."/>
                         </div>
-                        <div id="yogaInfo" class="collapse show" aria-labelledby="yogaHeader" data-parent="#accordion">
                             <div class="card-body">
-                                <p>We offer 3 Types of yoga each with their own specialized instructor</p>
-                                <ul>
-                                    <li>Hisoka Morrow instructs Vinyasa intermediate levels Monday-Friday @ 6p and
-                                        Saturdays @ 11a</li>
-                                    <li>Biscuit Krueger instructs Kundalini for all levels Monday-Friday @ 7:15p and
-                                        Saturdays @ 12:15p</li>
-                                    <li>Palm Siberia instructs Yin for all levels Monday-Friday @ 8:30p(class not
-                                        offered on Saturdays</li>
-                                </ul>
-                                <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
+                            <h3 class="card-title" id="yogaHeader">Yoga Classes</h3>
+                                <div class="card-content">
+                                    <div class="card-text">
+                                        <p>We offer 3 Types of yoga each with their own specialized instructor</p>
+                                        <ul>
+                                            <li>Hisoka Morrow instructs Vinyasa intermediate levels Monday-Friday @ 6p and Saturdays @ 11a</li>
+                                            <li>Biscuit Krueger instructs Kundalini for all levels Monday-Friday @ 7:15p and Saturdays @ 12:15p</li>
+                                            <li>Palm Siberia instructs Yin for all levels Monday-Friday @ 8:30p(class not offered on Saturdays)</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-dark btn-lg btn-block" data-toggle="modal" data-target="#classSignup">Book</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header bg-dark" id="coreHeader">
-                                <h3 class="mb-0 text-center">
-                                    <button class=" btn btn-link text-white" data-toggle="collapse"
-                                        data-target="#coreInfo" aria-expanded="false" aria-controls="coreInfo">
-                                        Core Classes
-                                    </button>
-                                </h3>
-                            </div>
-                            <div id="coreInfo" class="collapse" aria-labelledby="coreHeader" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>We offer 2 core classes a day on Monday, Wednesday and Friday. Only one class is
-                                        offered on Sunday at this time</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/coreClass.jpg" alt="An image of one of the Yoga classes offered."/>
+                        </div>
+                        <div class="card-body">
+                        <h3 class="card-title" id="coreHeader"> Core Classes</h3>
+                            <div class="card-content">
+                                <div class="card-text">
+                                    <p>We offer 2 core classes a day on Monday, Wednesday and Friday. Only one class is offered on Sunday at this time</p>
                                     <ul>
-                                        <li>Asta Staria instructs the Beginner courses @ noon on Monday, Wednesday,
-                                            Friday and Saturday</li>
-                                        <li>Son Goku instructs the intermediate courses @ 1p on Monday, Wednesday and
-                                            Friday</li>
+                                        <li>Asta Staria instructs the Beginner courses @ noon on Monday, Wednesday, Friday and Saturday</li>
+                                        <li>Son Goku instructs the intermediate courses @ 1p on Monday, Wednesday and Friday</li>
                                     </ul>
-                                    <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
+                                    <button type="button" class="btn btn-outline-dark btn-lg btn-block" data-toggle="modal" data-target="#classSignup">Book</button>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header bg-dark" id="climbingHeader">
-                                    <h3 class="mb-0 text-right">
-                                        <button class=" btn btn-link text-white" data-toggle="collapse"
-                                            data-target="#climbingInfo" aria-expanded="false"
-                                            aria-controls="climbingInfo">
-                                            Climbing 101
-                                        </button>
-                                    </h3>
-                                </div>
-                                <div id="climbingInfo" class="collapse" aria-labelledby="climbingHeader"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Climimbing 101 is a course where you are introdced to the basics of safety
-                                            and technique for climbing and is offered on Wednesdays and Saturdays @3pm.
-                                            This course is instructed by one of our certified lead climbers, but the
-                                            individual changes weekly as to give all team members exposure.</p>
-                                        <ul>
-                                            <li>Michael Phellps</li>
-                                            <li>Tony Tiger</li>
-                                            <li>Flash Slothmore</li>
-                                            <li>Sero Hanata</li>
-                                            <li>Peter Parker</li>
-                                            <li>Beeeeeez</li>
-                                        </ul>
-                                        <p class="bg-warning">*Note* Climbing 101 is not included in Day Pass admission
-                                        </p>
-                                        <button class="btn btn-outline-dark btn-lg btn-block">Book</button>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img class="card-img-top" src="img/leadWall_background.jpg" alt="An image of one of the Yoga classes offered."/>
+                        </div>
+                        <div class="card-body">
+                                <h3 class="card-title" id="climbingHeader">Climbing 101</h3>
+                            <div class="card-content">
+                                <div class="card-text">
+                                    <p>Climimbing 101 is a course where you are introdced to the basics of safety and technique for climbing and is offered on Wednesdays and Saturdays @3pm. This course is instructed by one of our certified lead climbers, but the individual changes weekly as to give all team members exposure.</p>
+                                    <ul>
+                                        <li>Michael Phellps</li>
+                                        <li>Tony Tiger</li>
+                                        <li>Flash Slothmore</li>
+                                        <li>Sero Hanata</li>
+                                        <li>Peter Parker</li>
+                                        <li>Beeeeeez</li>
+                                    </ul>
+                                    <p class="bg-warning">*Note* Climbing 101 is not included in Day Pass admission</p>
+                                    <button type="button" class="btn btn-outline-dark btn-lg btn-block" data-toggle="modal" data-target="#classSignup">Book</button>
                                 </div>
                             </div>
                         </div>
@@ -137,92 +168,92 @@
             </div>
         </div>
     </div>
-    <!--my intention is to have all three buttons use the same modal and have a form-->
+<!--my intention is to have all three buttons use the same modal and have a form--> 
 
 
-    <footer class="site-footer">
-        <div class="container container-fluid">
-            <div class="row">
-                <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
-                    data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
-                <div class="modal fade" tabindex="-1" role="dialog" id="newsletterModal">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Sign Up For Our Newsletter</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <br />
-                            <div class="col-md-12">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="firstName" class="col-2 col-form-label">First Name</label>
-                                        <div class="col-10 mt-3">
-                                            <input type="text" class="form-control" id="firstName" name="firstName"
-                                                placeholder="First Name" />
+
+<footer class="site-footer">
+    <div class="container container-fluid mb-1">
+        <div class="row">
+            <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
+                data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
+            <div class="modal fade" tabindex="-1" role="dialog" id="newsletterModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Sign Up For Our Newsletter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <br />
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-2 col-form-label">First Name</label>
+                                    <div class="col-10 mt-3">
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="First Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-2 col-form-label">Last Name</label>
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                            placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-2 col-form-label">Email</label>
+                                    <div class="col-10">
+                                        <input type="text" class="col form-control" id="email" name="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-9 ml-5">
+                                        May we contact you with promotional offers?
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactYes"
+                                                name="contactRadios" value="yes" />
+                                            <label for="contactYes" class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="contactNo"
+                                                name="contactRadios" value="no" />
+                                            <label for="contactNo" class="form-check-label">No</label>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="lastName" class="col-2 col-form-label">Last Name</label>
-                                        <div class="col-10">
-                                            <input type="text" class="form-control" id="lastName" name="lastName"
-                                                placeholder="Last Name" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-2 col-form-label">Email</label>
-                                        <div class="col-10">
-                                            <input type="text" class="col form-control" id="email" name="email"
-                                                placeholder="Email" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-9 ml-5">
-                                            May we contact you with promotional offers?
-                                            <div class="form-check form-check-inline">
-                                                <input type="radio" class="form-check-input" id="contactYes"
-                                                    name="contactRadios" value="yes" />
-                                                <label for="contactYes" class="form-check-label">Yes</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="radio" class="form-check-input" id="contactNo"
-                                                    name="contactRadios" value="no" />
-                                                <label for="contactNo" class="form-check-label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Sign up</button>
-                            </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Sign up</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-5 text-center">
-                    <h5 id="socialHeader">Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col text-center">
-                    <h5>Contact Us</h5>
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-                        1-206-555-1234</a><br>
-                    <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>
-                        info@rocktopic.com</a>
-                </div>
+            </div>
+            <div class="col-4 text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col text-center">
+                <h5>Contact Us</h5>
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                    1-206-555-1234</a><br>
+                <a role="button" class="btn btn-link" href="#"><i class="fa fa-envelope-o ml-4"></i>
+                    info@rocktopic.com</a>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
