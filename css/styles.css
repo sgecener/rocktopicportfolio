@@ -1,3 +1,7 @@
+body {
+ background: url(https://images.unsplash.com/photo-1506143925201-0252c51780b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center fixed;
+}
+
 h1, h2, h3, h5 {
     font-family: 'Big Shoulders Stencil Display' , cursive;
     
@@ -36,18 +40,14 @@ a, a:hover {
     background-image: linear-gradient( to right bottom, white, #56b097 20%, #808080, white);
 }
 
-#homeBody{
-    background: url(https://images.unsplash.com/photo-1575878738959-a009e322ecc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed;
-}
-
 #homeInfo {
-    background-color:rgba(	128, 128, 128, 0.8) ;
     border-radius: 50px;
     color: rgba(0,0,0,1) ;
+    background: url(https://images.unsplash.com/photo-1521729839347-131a32f9abcb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80) no-repeat center center fixed;
 }
 
 #waiverReminder {
-    background-color:rgba(	86, 176, 151, 0.9) ;
+    background-color:rgba(	86, 176, 151, 0.7) ;
     border-radius: 50px;
     color: rgba(0,0,0,1) ;
 }
@@ -66,8 +66,6 @@ a, a:hover {
     background-color: rgb(226, 190, 145);
 
 }
-
-
 
 #modalButton {
     margin-bottom: 20px;
@@ -185,11 +183,13 @@ a, a:hover {
     right: 0;
     overflow: hidden;
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: 1.5s ease;
   }
   .card:hover .card-body {
     height: 80%;
+    background: url(https://images.unsplash.com/photo-1521729839347-131a32f9abcb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80) no-repeat center center fixed;
+    color: white;
   }
   .card:hover .card-content {
     bottom: 0;

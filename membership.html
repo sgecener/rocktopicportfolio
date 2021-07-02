@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap"
+        rel="stylesheet">
 
-    <title>Rock Topic Climbing Gym</title>
+    <title>Rock Topic Climbing Gym: Membership</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md sticky-top bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="img/NewRockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo" class="image-fluid" height="40"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="img/NewRockTopicLogo.png" id="navbarLogo" alt="Rock Topic Logo"
+                class="image-fluid" height="40" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-align-right"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
@@ -37,6 +40,14 @@
 
 
         <div class="container">
+            <div class="row row-content">
+                <div class="col">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Memberships</li>
+                    </ol>
+                </div>
+            </div>
             <div class="row row-content">
                 <div class="card-wrapper col-sm-6">
                     <div class="card">
@@ -155,7 +166,7 @@
         <footer class="site-footer">
             <div class="container container-fluid mb-1">
                 <div class="row">
-                    <a role="button" class="btn btn-success col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
+                    <a role="button" class="btn btn-outline-light col-9 col-lg-2 ml-5 mb-5" data-toggle="modal"
                         data-target="#newsletterModal" id="modalButton"><strong>Sign Up For Our Newsletter</strong></a>
                     <div class="modal fade" tabindex="-1" role="dialog" id="newsletterModal">
                         <div class="modal-dialog" role="document">
@@ -208,7 +219,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Sign up</button>
+                                    <button type="button" class="btn btn-light">Sign up</button>
                                 </div>
                             </div>
                         </div>
@@ -235,6 +246,11 @@
             </div>
         </footer>
 
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    
 
 </body>
 
