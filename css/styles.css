@@ -96,6 +96,10 @@ a, a:hover {
     opacity: 0.5;
 }
 
+#social {
+    padding-left: 150px;
+}
+
 /*these styles will need to be changed later...maybe ... check back after addind sass*/
 #yogaHeader {
     font-family: 'Big Shoulders Stencil Display' , cursive;
