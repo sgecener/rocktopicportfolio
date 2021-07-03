@@ -86,6 +86,7 @@ a, a:hover {
 #jumbotronLogo {
     border-radius: 50%;
     padding-right: 5px;
+    position: absolute;
 }
 
 #navbarLogo {
@@ -103,14 +104,17 @@ a, a:hover {
 /*these styles will need to be changed later...maybe ... check back after addind sass*/
 #yogaHeader {
     font-family: 'Big Shoulders Stencil Display' , cursive;
+    font-size: 40px;
 }
 
 #coreHeader {
     font-family: 'Big Shoulders Stencil Display' , cursive;
+    font-size: 40px;
 }
 
 #climbingHeader {
     font-family: 'Big Shoulders Stencil Display' , cursive;
+    font-size: 40px;
 }
 
 /*this styling is inly for the cards on the index and the membership pages*/
@@ -191,7 +195,7 @@ a, a:hover {
     transition: 1.5s ease;
   }
   .card:hover .card-body {
-    height: 80%;
+    height: 90%;
     background: url(https://images.unsplash.com/photo-1521729839347-131a32f9abcb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80) no-repeat center center fixed;
     color: white;
   }
